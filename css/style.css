@@ -57,9 +57,12 @@ html,body{height:100%;}
 .readymag {
   display:none;position:fixed;width:159px;
   height:38px;left:50%;top:26px;margin-left:-80px;
-  background-image:url('../img/homepage/logo.png');
+  background-image:url('');
   background-size:159px 38px;
   background-repeat:no-repeat;
+  line-height: 45.699999999999996px;
+font-size: 63.6px;
+font-weight: bold;
 }
 .login {
   display:none;
@@ -253,4 +256,74 @@ html,body{height:100%;}
             background-size:620px 312px;}
             .content-wrapper .page.page-create .content .mac .mac-body{position:absolute;width:100%;height:100%;top:0;left:0;background-image:none !important;}
             .content-wrapper .page.page-create .content .mac .mac-body .mac-video{position:absolute;left:127px;top:18px;width:236px;height:133px;background:#000;} 
-            .content-wrapper .page.page-create .content .message{margin-top:-78px;position:relative;left:0;margin-left:0;top:0;width:auto;height:auto;}.content-wrapper .page.page-create .content .message .caption{font-size:56px;color:#363234;text-align:center;} .content-wrapper .page.page-create .content .message .text{font-size:16.01px;padding:0 34px;margin-top:15px;color:rgba(54, 50, 52, 0.8);line-height:22px;text-align:center;} .content-wrapper .page.page-discover{min-height:0;background:#cdcfd4;padding:21px 0 78px;}.content-wrapper .page.page-discover .content{position:relative;width:100%;height:auto;left:0;top:0;margin-top:0;margin-left:0;}.content-wrapper .page.page-discover .content .ipad{position:relative;margin-left:-161px;left:50%;top:0;width:330px;height:233px;background-image:url('../img/homepage/iphone/ipad.png');background-size:330px 233px;}.content-wrapper .page.page-discover .content .ipad .ipad-video{position:absolute;left:48px;top:30px;width:222px;height:167px;background:#000;} .content-wrapper .page.page-discover .content .message{margin-top:3px;position:relative;left:0;margin-left:0;top:0;width:auto;height:auto;}.content-wrapper .page.page-discover .content .message .caption{font-size:56px;color:#363234;text-align:center;} .content-wrapper .page.page-discover .content .message .text{width:auto;padding:0 34px;margin-top:15px;font-size:16.02px;color:rgba(54, 50, 52, 0.8);line-height:22px;text-align:center;} .content-wrapper .page.page-discover .content .message .demo-link{display:none;} .content-wrapper .page.page-discover .content .message .demo-author{display:none;} .content-wrapper .page.page-more{min-height:0;background:#36b2e2;padding:27px 0 78px;}.content-wrapper .page.page-more .content{position:relative;width:100%;height:auto;left:0;top:0;margin-top:0;margin-left:0;} .content-wrapper .page.page-more .item{float:none;margin:46px auto 0;} .content-wrapper .page.page-beta{min-height:0;background:#a4f2d4;padding:57px 0 28px;}.content-wrapper .page.page-beta .copyright{position:relative;text-align:center;margin:36px auto 0;left:auto;bottom:auto;} .content-wrapper .page.page-beta .hello{display:none;} .content-wrapper .page.page-beta .content{position:relative;width:100%;height:auto;left:0;top:0;margin-top:0;margin-left:0;}.content-wrapper .page.page-beta .content .caption{font-size:56px;color:#363234;} .content-wrapper .page.page-beta .content .text1{color:rgba(54, 50, 52, 0.8);margin-top:15px;font-size:16px;line-height:22px;padding:0 32px;} .content-wrapper .page.page-beta .content .email{width:100%;margin:20px 0 0;}.content-wrapper .page.page-beta .content .email .input{left:24px;right:74px;width:auto;} .content-wrapper .page.page-beta .content .email .submit{right:24px;} .content-wrapper .page.page-beta .content .email .after{left:24px;right:24px;width:auto;font-size:17px;} .content-wrapper .page.page-beta .content .text2{margin:25px auto 0;padding:0;width:257px;color:rgba(29, 26, 27, 0.8);}.content-wrapper .page.page-beta .content .text2 br{display:none;} .content-wrapper .page.page-beta .content .text2.iphone{display:block;} .content-wrapper .page.page-beta .content .text2.desktop{display:none;} .content-wrapper .page.page-beta .content .text2 a{color:rgba(29, 26, 27, 0.8);} .content-wrapper .page.page-beta .content .social{width:240px;height:56px;text-align:center;margin:23px auto 0;}.content-wrapper .page.page-beta .content .social .facebook{display:inline-block;margin-right:16px;float:none;height:20px;position:relative;} .content-wrapper .page.page-beta .content .social .twitter{display:inline-block;float:none;height:20px;margin-right:0;position:relative;top:3px;} .content-wrapper .page.page-beta .content .social .twitter-follow{display:inline-block;float:none;margin-top:16px;position:relative;} .content-wrapper .page.page-beta .content .flag{margin:40px auto 0;} .crumpled-box .login{display:none;} .crumpled-box .logo{margin-top:-18px;} .crumpled-box .scroll-wrapper{margin-left:-45px;margin-top:-11px;width:90px;height:21px;background-position:44px 0px;background-size:4px 21px;}.crumpled-box .scroll-wrapper .scroll-left,.crumpled-box .scroll-wrapper .scroll-right{height:16px;top:2px;font-size:14px;line-height:16px;} .crumpled-box .scroll-wrapper .scroll-left{left:3px;} .crumpled-box .scroll-wrapper .scroll-right{right:1px;}}@media all and (max-device-width:767px) and (orientation:landscape){.crumpled-box .logo{width:85px;height:20px;left:50%;top:50%;margin-left:-42px;margin-top:-10px;background-image:url('../img/homepage/iphone/curtain-logo-landscape.png');background-repeat:no-repeat;background-size:85px 20px;}}@media all and (device-width:768px) and (device-height:1024px){.content-wrapper .page.page-intro{background:#00212c;} .content-wrapper .page.page-create{background:#00b68c;}.content-wrapper .page.page-create .content .message .caption{color:#1d1a1b;} .content-wrapper .page.page-create .content .message .text{color:rgba(29, 26, 27, 0.7);} .content-wrapper .page.page-discover{background:#cdcfd4;} .content-wrapper .page.page-more{background:#36b2e2;} .content-wrapper .page.page-beta{background:#a4f2d4;}}@media only screen and (-webkit-min-device-pixel-ratio:2){.readymag{background-image:url('../img/homepage/retina-logo.png');} .content-wrapper .page.page-create .content .mac .mac-body{background-image:url('../img/homepage/retina-mac-body.png');} .content-wrapper .page.page-discover .content .ipad{background-image:url('../img/homepage/retina-ipad.png');} .content-wrapper .page.page-discover .content .message .demo-link .cover{background-image:url('../img/homepage/retina-demo-cover.png');} .content-wrapper .page.page-more .item.cross .icon{background-image:url('../img/homepage/retina-item1.png');} .content-wrapper .page.page-more .item.sell .icon{background-image:url('../img/homepage/retina-item2.png');} .content-wrapper .page.page-more .item.embed .icon{background-image:url('../img/homepage/retina-item3.png');} .content-wrapper .page.page-beta .content .email .submit{background-image:url('../img/homepage/retina-go.png');} .content-wrapper .page.page-beta .content .email.valid .submit{background-image:url('../img/homepage/retina-go-active.png');} .no-touch .content-wrapper .page.page-beta .content .email.valid .submit:hover{background-image:url('../img/homepage/retina-go-hover.png');} .content-wrapper .page.page-beta .content .flag{background-image:url('../img/homepage/retina-flag.png');} .crumpled-box .scroll-wrapper{background-image:url('../img/homepage/retina-scroll-arrow.png');} .crumpled-box .logo{background-image:url('../img/homepage/retina-readymag.png');}}@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px){.content-wrapper .page.page-intro .content .logo{background-image:url('../img/homepage/retina-logo.png');} .content-wrapper .page.page-create .content .mac{background-image:url('../img/homepage/iphone/retina-mac-body.png');} .content-wrapper .page.page-discover .content .ipad{background-image:url('../img/homepage/iphone/retina-ipad.png');}}@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px) and (orientation:landscape){.crumpled-box .logo{background-image:url('../img/homepage/iphone/retina-curtain-logo-landscape.png');}}
+            .content-wrapper .page.page-create .content .message{margin-top:-78px;position:relative;left:0;margin-left:0;top:0;width:auto;height:auto;}
+            .content-wrapper .page.page-create .content .message .caption{font-size:56px;color:#363234;text-align:center;} 
+            .content-wrapper .page.page-create .content .message .text{font-size:16.01px;padding:0 34px;margin-top:15px;color:rgba(54, 50, 52, 0.8);line-height:22px;text-align:center;} 
+            .content-wrapper .page.page-discover{min-height:0;background:#cdcfd4;padding:21px 0 78px;}
+            .content-wrapper .page.page-discover .content{position:relative;width:100%;height:auto;left:0;top:0;margin-top:0;margin-left:0;}
+            .content-wrapper .page.page-discover .content .ipad{position:relative;margin-left:-161px;left:50%;top:0;width:330px;height:233px;background-image:url('../img/homepage/iphone/ipad.png');background-size:330px 233px;}
+            .content-wrapper .page.page-discover .content .ipad .ipad-video{position:absolute;left:48px;top:30px;width:222px;height:167px;background:#000;} 
+            .content-wrapper .page.page-discover .content .message{margin-top:3px;position:relative;left:0;margin-left:0;top:0;width:auto;height:auto;}
+            .content-wrapper .page.page-discover .content .message .caption{font-size:56px;color:#363234;text-align:center;} 
+            .content-wrapper .page.page-discover .content .message .text{width:auto;padding:0 34px;margin-top:15px;font-size:16.02px;color:rgba(54, 50, 52, 0.8);line-height:22px;text-align:center;} 
+            .content-wrapper .page.page-discover .content .message .demo-link{display:none;} 
+            .content-wrapper .page.page-discover .content .message .demo-author{display:none;} 
+            .content-wrapper .page.page-more{min-height:0;background:#36b2e2;padding:27px 0 78px;}
+            .content-wrapper .page.page-more .content{position:relative;width:100%;height:auto;left:0;top:0;margin-top:0;margin-left:0;} 
+            .content-wrapper .page.page-more .item{float:none;margin:46px auto 0;} 
+            .content-wrapper .page.page-beta{min-height:0;background:#a4f2d4;padding:57px 0 28px;}
+            .content-wrapper .page.page-beta .copyright{position:relative;text-align:center;margin:36px auto 0;left:auto;bottom:auto;} 
+            .content-wrapper .page.page-beta .hello{display:none;} 
+            .content-wrapper .page.page-beta .content{position:relative;width:100%;height:auto;left:0;top:0;margin-top:0;margin-left:0;}
+            .content-wrapper .page.page-beta .content .caption{font-size:56px;color:#363234;}
+             .content-wrapper .page.page-beta .content .text1{color:rgba(54, 50, 52, 0.8);margin-top:15px;font-size:16px;line-height:22px;padding:0 32px;} 
+             .content-wrapper .page.page-beta .content .email{width:100%;margin:20px 0 0;}
+             .content-wrapper .page.page-beta .content .email .input{left:24px;right:74px;width:auto;}
+              .content-wrapper .page.page-beta .content .email .submit{right:24px;} 
+              .content-wrapper .page.page-beta .content .email .after{left:24px;right:24px;width:auto;font-size:17px;} 
+              .content-wrapper .page.page-beta .content .text2{margin:25px auto 0;padding:0;width:257px;color:rgba(29, 26, 27, 0.8);}
+              .content-wrapper .page.page-beta .content .text2 br{display:none;} 
+              .content-wrapper .page.page-beta .content .text2.iphone{display:block;} 
+              .content-wrapper .page.page-beta .content .text2.desktop{display:none;} 
+              .content-wrapper .page.page-beta .content .text2 a{color:rgba(29, 26, 27, 0.8);} 
+              .content-wrapper .page.page-beta .content .social{width:240px;height:56px;text-align:center;margin:23px auto 0;}
+              .content-wrapper .page.page-beta .content .social .facebook{display:inline-block;margin-right:16px;float:none;height:20px;position:relative;} 
+              .content-wrapper .page.page-beta .content .social .twitter{display:inline-block;float:none;height:20px;margin-right:0;position:relative;top:3px;} 
+              .content-wrapper .page.page-beta .content .social .twitter-follow{display:inline-block;float:none;margin-top:16px;position:relative;} 
+              .content-wrapper .page.page-beta .content .flag{margin:40px auto 0;} 
+              .crumpled-box .login{display:none;} 
+              .crumpled-box .logo{margin-top:-18px;} 
+              .crumpled-box .scroll-wrapper{margin-left:-45px;margin-top:-11px;width:90px;height:21px;background-position:44px 0px;background-size:4px 21px;}
+              .crumpled-box .scroll-wrapper .scroll-left,.crumpled-box .scroll-wrapper .scroll-right{height:16px;top:2px;font-size:14px;line-height:16px;} 
+              .crumpled-box .scroll-wrapper .scroll-left{left:3px;} 
+              .crumpled-box .scroll-wrapper .scroll-right{right:1px;}}
+ @media all and (max-device-width:767px) and (orientation:landscape){
+                .crumpled-box .logo{width:85px;height:20px;left:50%;top:50%;margin-left:-42px;margin-top:-10px;background-image:url('../img/homepage/iphone/curtain-logo-landscape.png');background-repeat:no-repeat;background-size:85px 20px;}}
+
+@media all and (device-width:768px) and (device-height:1024px){
+                .content-wrapper .page.page-intro{background:#00212c;} 
+                .content-wrapper .page.page-create{background:#00b68c;}
+                .content-wrapper .page.page-create .content .message .caption{color:#1d1a1b;} 
+                .content-wrapper .page.page-create .content .message .text{color:rgba(29, 26, 27, 0.7);} 
+                .content-wrapper .page.page-discover{background:#cdcfd4;} 
+                .content-wrapper .page.page-more{background:#36b2e2;} 
+                .content-wrapper .page.page-beta{background:#a4f2d4;}}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2){
+                  .readymag{background-image:url('../img/homepage/retina-logo.png');} 
+                  .content-wrapper .page.page-create .content .mac .mac-body{background-image:url('../img/homepage/retina-mac-body.png');} 
+                  .content-wrapper .page.page-discover .content .ipad{background-image:url('../img/homepage/retina-ipad.png');} 
+                  .content-wrapper .page.page-discover .content .message .demo-link .cover{background-image:url('../img/homepage/retina-demo-cover.png');} 
+                  .content-wrapper .page.page-more .item.cross .icon{background-image:url('../img/homepage/retina-item1.png');} 
+                  .content-wrapper .page.page-more .item.sell .icon{background-image:url('../img/homepage/retina-item2.png');} 
+                  .content-wrapper .page.page-more .item.embed .icon{background-image:url('../img/homepage/retina-item3.png');} 
+                  .content-wrapper .page.page-beta .content .email .submit{background-image:url('../img/homepage/retina-go.png');} 
+                  .content-wrapper .page.page-beta .content .email.valid .submit{background-image:url('../img/homepage/retina-go-active.png');} 
+                  .no-touch .content-wrapper .page.page-beta .content .email.valid .submit:hover{background-image:url('../img/homepage/retina-go-hover.png');} 
+                  .content-wrapper .page.page-beta .content .flag{background-image:url('../img/homepage/retina-flag.png');} 
+                  .crumpled-box .scroll-wrapper{background-image:url('../img/homepage/retina-scroll-arrow.png');} 
+                  .crumpled-box .logo{background-image:url('../img/homepage/retina-readymag.png');}}
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px){
+    .content-wrapper .page.page-intro .content .logo{background-image:url('../img/homepage/retina-logo.png');} 
+                  .content-wrapper .page.page-create .content .mac{background-image:url('../img/homepage/iphone/retina-mac-body.png');} 
+                  .content-wrapper .page.page-discover .content .ipad{background-image:url('../img/homepage/iphone/retina-ipad.png');}}@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px) and (orientation:landscape){.crumpled-box .logo{background-image:url('../img/homepage/iphone/retina-curtain-logo-landscape.png');}}
