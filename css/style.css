@@ -313,12 +313,9 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
               .content-wrapper .page.page-beta .content .social .twitter{display:inline-block;float:none;height:20px;margin-right:0;position:relative;top:3px;} 
               .content-wrapper .page.page-beta .content .social .twitter-follow{display:inline-block;float:none;margin-top:16px;position:relative;} 
               .content-wrapper .page.page-beta .content .flag{margin:40px auto 0;} 
-              .crumpled-box .login{display:none;} 
               .crumpled-box .logo{margin-top:-18px;} 
               .crumpled-box .scroll-wrapper{margin-left:-45px;margin-top:-11px;width:90px;height:21px;background-position:44px 0px;background-size:4px 21px;}
-              .crumpled-box .scroll-wrapper .scroll-left,.crumpled-box .scroll-wrapper .scroll-right{height:16px;top:2px;font-size:14px;line-height:16px;} 
-              .crumpled-box .scroll-wrapper .scroll-left{left:3px;} 
-              .crumpled-box .scroll-wrapper .scroll-right{right:1px;}}
+             
  @media all and (max-device-width:767px) and (orientation:landscape){
                 .crumpled-box .logo{width:85px;height:20px;left:50%;top:50%;margin-left:-42px;margin-top:-10px;background-image:url('../img/homepage/iphone/curtain-logo-landscape.png');background-repeat:no-repeat;background-size:85px 20px;}}
 
@@ -343,8 +340,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
                   .content-wrapper .page.page-beta .content .email.valid .submit{background-image:url('../img/homepage/retina-go-active.png');} 
                   .no-touch .content-wrapper .page.page-beta .content .email.valid .submit:hover{background-image:url('../img/homepage/retina-go-hover.png');} 
                   .content-wrapper .page.page-beta .content .flag{background-image:url('../img/homepage/retina-flag.png');} 
-                  .crumpled-box .scroll-wrapper{background-image:url('../img/homepage/retina-scroll-arrow.png');} 
-                  .crumpled-box .logo{background-image:url('../img/homepage/retina-readymag.png');}}
+              
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px){
     .content-wrapper .page.page-intro .content .logo{background-image:url('../img/homepage/retina-logo.png');} 
                   .content-wrapper .page.page-create .content .photo{background-image:url('../img/homepage/iphone/retina-mac-body.png');} 
