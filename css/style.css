@@ -1,7 +1,4 @@
 
-
-
-
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
 big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,
 dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
@@ -209,7 +206,8 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 .content-wrapper .page.page-beta .content .social .twitter{float:left;margin-right:5px;}
 .content-wrapper .page.page-beta .content .social .twitter-follow{float:left;}
 .content-wrapper .page.page-beta .content .flag{position:relative;margin:31px auto 0;width:48px;height:48px;background-image:url('../img/homepage/flag.png');background-repeat:no-repeat;background-size:48px 48px;}
-.crumpled-box{position:fixed;top:0;left:0;width:100%;}
+
+.crumpled-box{position:fixed;top:0;left:0;width:100%; }
 .crumpled-box .scroll-wrapper{
   cursor:pointer;
   opacity:0.5;
@@ -221,11 +219,19 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
  background-repeat:no-repeat;background-size:28px 42px;}
 
 .crumpled-box .scroll-wrapper:hover {opacity: 1;}
-.crumpled-box .logo{position:absolute;width:159px;height:40px;left:50%;top:50%;margin-left:-80px;margin-top:-20px;background-image:url('../img/homepage/readymag.png');background-repeat:no-repeat;background-size:159px 40px;}
-.crumpled-box .login{display:block;position:absolute;width:88px;height:40px;right:24px;top:50%;margin-top:-20px;border-radius:20px;box-shadow:0 0 0 1px rgba(0, 0, 0, 0.08);text-align:center;font-family:"Apercu Pro Regular",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;color:#1d1a1b;font-size:14px;line-height:40px;text-decoration:none;}
-.no-touch .crumpled-box .login:hover{text-decoration:none;box-shadow:0 0 0 1px rgba(0, 182, 140, 0.48);color:#00b68c;}
-.crumpled-box .line-wrapper{position:absolute;left:0;width:100%;height:120px;}
-.crumpled-box .line-wrapper .line{width:100%;height:100%;background:transparent;font-size:58px;color:#1d1a1b;text-align:center;white-space:nowrap;font-family:"Apercu Pro Regular",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
+.crumpled-box .logo{position:absolute;width:159px;height:40px;left:50%;top:50%;margin-left:-80px;margin-top:-20px;background-image:url('#');background-repeat:no-repeat;background-size:159px 40px;}
+.crumpled-box .line-wrapper{position:absolute;left:0;width:100%;height:110px; background-color: #b0b0b0;  }
+.crumpled-box .line-wrapper .line{
+  width:100%;
+  height:100%;
+ 
+  font-size:40px;color:#1d1a1b;text-align:center;
+  white-space:nowrap;
+  font-family:"Apercu Pro Regular",
+  'Trebuchet MS',Arial,sans-serif;font-weight:normal;
+  font-style:normal;
+  background-color: #b0b0b0;
+}
 .crumpled-box .line-wrapper .gradient{
   position:absolute;
   left:0;
@@ -234,6 +240,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
   height:100%;
   opacity:0;
 }
+
 .crumpled-box .line-wrapper.odd .gradient{
   background:-moz-linear-gradient(top, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
   background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%);
@@ -248,15 +255,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
   background:linear-gradient(top, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.28) 100%);}
 
 
-.cover {
-  -moz-background-size:cover;
-  -webkit-background-size:cover;
-  background-size:cover;
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  z-index:0;
-}
+
 
 @media all and (max-device-width:767px){
   .curtain-removed .readymag,.curtain-removed .login,.curtain-removed .menu{display:none;} 
