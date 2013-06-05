@@ -109,7 +109,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 .menu span{display:inline-block;position:relative;width:100%;height:0;}
 
 .content-wrapper{
-  background:#00212c;
+  background:#000000;
   }
 .content-wrapper.inactive{
   position:fixed;
@@ -210,11 +210,17 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 .content-wrapper .page.page-beta .content .social .twitter-follow{float:left;}
 .content-wrapper .page.page-beta .content .flag{position:relative;margin:31px auto 0;width:48px;height:48px;background-image:url('../img/homepage/flag.png');background-repeat:no-repeat;background-size:48px 48px;}
 .crumpled-box{position:fixed;top:0;left:0;width:100%;}
-.crumpled-box .scroll-wrapper{cursor:pointer;opacity:0.5;position:absolute;left:50%;top:50%;margin-left:-62px;margin-top:-22px;width:124px;height:45px;background-image:url('../img/homepage/scroll-arrow.png');background-position:58px 2px;background-repeat:no-repeat;background-size:8px 42px;}
-.crumpled-box .scroll-wrapper .scroll-left,.crumpled-box .scroll-wrapper .scroll-right{position:absolute;height:20px;text-align:center;border-bottom:1px dotted #1d1a1b;top:11px;font-family:"Apercu Pro Medium",'Trebuchet MS',Arial,sans-serif;font-weight:600;font-style:normal;color:#1d1a1b;font-size:18px;text-shadow:none;line-height:20px;}
-.crumpled-box .scroll-wrapper .scroll-left{left:6px;}
-.crumpled-box .scroll-wrapper .scroll-right{right:6px;}
-.no-touch .crumpled-box .scroll-wrapper:hover .scroll-left,.no-touch .crumpled-box .scroll-wrapper:hover .scroll-right{border-bottom:1px dotted transparent;}
+.crumpled-box .scroll-wrapper{
+  cursor:pointer;
+  opacity:0.5;
+  position:absolute;
+  left:49%;
+  margin-top:-22px;
+  width:44px;height:45px;
+  background-image:url('../img/arrow.png');
+ background-repeat:no-repeat;background-size:28px 42px;}
+
+.crumpled-box .scroll-wrapper:hover {opacity: 1;}
 .crumpled-box .logo{position:absolute;width:159px;height:40px;left:50%;top:50%;margin-left:-80px;margin-top:-20px;background-image:url('../img/homepage/readymag.png');background-repeat:no-repeat;background-size:159px 40px;}
 .crumpled-box .login{display:block;position:absolute;width:88px;height:40px;right:24px;top:50%;margin-top:-20px;border-radius:20px;box-shadow:0 0 0 1px rgba(0, 0, 0, 0.08);text-align:center;font-family:"Apercu Pro Regular",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;color:#1d1a1b;font-size:14px;line-height:40px;text-decoration:none;}
 .no-touch .crumpled-box .login:hover{text-decoration:none;box-shadow:0 0 0 1px rgba(0, 182, 140, 0.48);color:#00b68c;}
