@@ -121,39 +121,39 @@ function contentInitialize() {
         var n, r = [ {
             st: 0,
             ed: 10,
-            text: "Anyone can publish a beautiful mag. Our constructor is really that simple, intuitive and easy-to-use. Therefore, the only thing you should care about is the content."
+            text: ""
         }, {
             st: 10,
             ed: 22,
-            text: "Easily set the background using color, photo or video."
+            text: ""
         }, {
             st: 22,
             ed: 42,
-            text: "Style the text freely and choose among hundreds of web fonts."
+            text: ""
         }, {
             st: 42,
             ed: 56,
-            text: "Design using grids. Easily set columns, gutters and baseline for your page."
+            text: ""
         }, {
             st: 56,
             ed: 90,
-            text: "We've built a smart online text editor. Splitting among columns, setting margins and playing with font styles is just fascinating."
+            text: ""
         }, {
             st: 90,
             ed: 98,
-            text: "Preview the results in one click."
+            text: ""
         }, {
             st: 98,
             ed: 124,
-            text: "With beautiful built-in templates creating a mag becomes even easier."
+            text: ""
         }, {
             st: 124,
             ed: 152,
-            text: "Search through Google Images, Flickr and Instagram right from the page."
+            text: ""
         }, {
             st: 152,
             ed: 99999,
-            text: "Publish in a second. Furthermore, add changes and republish the mag any time you want."
+            text: ""
         } ], i = -1;
         for (n = 0; r.length > n; n++) r[n].st <= t.seconds && r[n].ed >= t.seconds && (i = n);
         i != p && (0 > i || (p = i, $(".page.page-create .content .message .text").text(r[i].text)));
