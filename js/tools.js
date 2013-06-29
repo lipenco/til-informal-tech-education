@@ -107,64 +107,6 @@ function homepageInitialize() {
 }
 
 function contentInitialize() {
-    function e() {
-        var e = '<iframe id="mac_video" src="http://player.vimeo.com/video/61953558?wmode=opaque&api=1&player_id=mac_video&title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;loop=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>', r = '<iframe id="ipad_video" src="http://player.vimeo.com/video/61793738?wmode=opaque&api=1&player_id=ipad_video&title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff&amp;loop=1" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
-        $(".mac-video").html(e), $(".ipad-video").html(r), l = new VimeoPlayer($("#mac_video")[0], {
-            ready: n,
-            playProgress: t,
-            seek: t
-        }), f = new VimeoPlayer($("#ipad_video")[0], {
-            ready: n
-        });
-    }
-    function t(e, t) {
-        var n, r = [ {
-            st: 0,
-            ed: 10,
-            text: ""
-        }, {
-            st: 10,
-            ed: 22,
-            text: ""
-        }, {
-            st: 22,
-            ed: 42,
-            text: ""
-        }, {
-            st: 42,
-            ed: 56,
-            text: ""
-        }, {
-            st: 56,
-            ed: 90,
-            text: ""
-        }, {
-            st: 90,
-            ed: 98,
-            text: ""
-        }, {
-            st: 98,
-            ed: 124,
-            text: ""
-        }, {
-            st: 124,
-            ed: 152,
-            text: ""
-        }, {
-            st: 152,
-            ed: 99999,
-            text: ""
-        } ], i = -1;
-        for (n = 0; r.length > n; n++) r[n].st <= t.seconds && r[n].ed >= t.seconds && (i = n);
-        i != p && (0 > i || (p = i, $(".page.page-create .content .message .text").text(r[i].text)));
-    }
-    function n() {
-        function e(e) {
-            var t = e.offset().top - (m ? g.scrollTop() : 0), n = e.height();
-            return t > 0 && $(window).height() > t + n;
-        }
-        m || (l && l.isReady && l.notPlayedYet && e($(".mac-video")) && l.play(), f && f.isReady && f.notPlayedYet && e($(".ipad-video")) && f.play());
-    }
     function r(e) {
         var t = $(e.currentTarget).attr("data-page"), n = $(".page.page-" + t);
         m ? $("html,body").animate({
@@ -179,15 +121,7 @@ function contentInitialize() {
         }
         y.toggleClass("valid", e(v.val()));
     }
-    function o() {
-        y.hasClass("valid") && $.post("/api/emailme/", {
-            email: v.val()
-        }, function() {
-            y.addClass("submitted"), v.remove();
-        }).error(function() {
-            y.addClass("submitted"), v.remove();
-        });
-    }
+   
     function a() {
         h.find(".page").css("height", d.height()), u(), n();
     }
@@ -356,12 +290,7 @@ function contentInitialize() {
         }
         return i + E(e, t, n || (a ? "border" : "content"), r, o) + "px";
     }
-    function k(e) {
-        var t = X, n = Vt[e];
-        return n || (n = N(e, t), "none" !== n && n || (Bt = (Bt || ot("<iframe frameborder='0' width='0' height='0'/>").css("cssText", "display:block !important")).appendTo(t.documentElement), 
-        t = (Bt[0].contentWindow || Bt[0].contentDocument).document, t.write("<!doctype html><html><body>"), 
-        t.close(), n = N(e, t), Bt.detach()), Vt[e] = n), n;
-    }
+   
     function N(e, t) {
         var n = ot(t.createElement(e)).appendTo(t.body), r = ot.css(n[0], "display");
         return n.remove(), r;
@@ -2053,9 +1982,7 @@ function contentInitialize() {
         children: function(e) {
             return ot.sibling(e.firstChild);
         },
-        contents: function(e) {
-            return ot.nodeName(e, "iframe") ? e.contentDocument || e.contentWindow.document : ot.merge([], e.childNodes);
-        }
+       
     }, function(e, t) {
         ot.fn[e] = function(n, r) {
             var i = ot.map(this, t, n);
@@ -3367,7 +3294,7 @@ function() {
         "\\": "\\",
         "\r": "r",
         "\n": "n",
-        " ": "t",
+        "	": "t",
         "\u2028": "u2028",
         "\u2029": "u2029"
     }, F = /\\|'|\r|\n|\t|\u2028|\u2029/g;
@@ -3793,101 +3720,8 @@ window.Modernizr = function(e, t, n) {
     };
 }(jQuery);
 
-var Froogaloop = function() {
-    function e(t) {
-        return new e.fn.init(t);
-    }
-    function t(e, t, n) {
-        if (!n.contentWindow.postMessage) return !1;
-        var r = n.getAttribute("src").split("?")[0], i = JSON.stringify({
-            method: e,
-            value: t
-        });
-        "//" === r.substr(0, 2) && (r = window.location.protocol + r), n.contentWindow.postMessage(i, r);
-    }
-    function n(e) {
-        var t, n;
-        try {
-            t = JSON.parse(e.data), n = t.event || t.method;
-        } catch (r) {}
-        if ("ready" != n || c || (c = !0), e.origin != l) return !1;
-        var o = t.value, a = t.data, s = "" === s ? null : t.player_id, u = i(n, s), f = [];
-        return u ? (void 0 !== o && f.push(o), a && f.push(a), s && f.push(s), f.length > 0 ? u.apply(null, f) : u.call()) : !1;
-    }
-    function r(e, t, n) {
-        n ? (u[n] || (u[n] = {}), u[n][e] = t) : u[e] = t;
-    }
-    function i(e, t) {
-        return t ? u[t][e] : u[e];
-    }
-    function o(e, t) {
-        if (t && u[t]) {
-            if (!u[t][e]) return !1;
-            u[t][e] = null;
-        } else {
-            if (!u[e]) return !1;
-            u[e] = null;
-        }
-        return !0;
-    }
-    function a(e) {
-        "//" === e.substr(0, 2) && (e = window.location.protocol + e);
-        for (var t = e.split("/"), n = "", r = 0, i = t.length; i > r && 3 > r; r++) n += t[r], 2 > r && (n += "/");
-        return n;
-    }
-    function s(e) {
-        return !!(e && e.constructor && e.call && e.apply);
-    }
-    var u = {}, c = !1, l = (Array.prototype.slice, "");
-    return e.fn = e.prototype = {
-        element: null,
-        init: function(e) {
-            return "string" == typeof e && (e = document.getElementById(e)), this.element = e, this.element ? (l = a(this.element.getAttribute("src")), 
-            this) : null;
-        },
-        api: function(e, n) {
-            if (!this.element || !e) return !1;
-            var i = this, o = i.element, a = "" !== o.id ? o.id : null, u = s(n) ? null : n, c = s(n) ? n : null;
-            return c && r(e, c, a), t(e, u, o), i;
-        },
-        addEvent: function(e, n) {
-            if (!this.element) return !1;
-            var i = this, o = i.element, a = "" !== o.id ? o.id : null;
-            return r(e, n, a), "ready" != e ? t("addEventListener", e, o) : "ready" == e && c && n.call(null, a), 
-            i;
-        },
-        removeEvent: function(e) {
-            if (!this.element) return !1;
-            var n = this, r = n.element, i = "" !== r.id ? r.id : null, a = o(e, i);
-            "ready" != e && a && t("removeEventListener", e, r);
-        }
-    }, e.fn.init.prototype = e.fn, window.addEventListener ? window.addEventListener("message", n, !1) : window.attachEvent("onmessage", n), 
-    window.Froogaloop = window.$f = e;
-}(), VimeoPlayer = function(e, t) {
-    _.bindAll(this), this.callbacks = t || {}, this.isReady = !1, this.notPlayedYet = !0, this.player = $f(e), 
-    this.player.addEvent("ready", _.bind(function(e) {
-        this.isReady = !0, this.fire("ready", e), this.player.api("setVolume", 0), this.player.addEvent("play", _.bind(function(e) {
-            this.notPlayedYet = !1, this.fire("play", e);
-        }, this)), this.player.addEvent("pause", _.bind(function(e) {
-            this.fire("pause", e);
-        }, this)), this.player.addEvent("finish", _.bind(function(e) {
-            this.fire("finish", e);
-        }, this)), this.player.addEvent("seek", _.bind(function(e) {
-            this.fire("seek", e);
-        }, this)), this.player.addEvent("playProgress", _.bind(function(e) {
-            this.fire("playProgress", e);
-        }, this));
-    }, this));
-};
 
-VimeoPlayer.prototype = {
-    fire: function(e, t) {
-        this.callbacks && "function" == typeof this.callbacks[e] && this.callbacks[e](this.player, t);
-    },
-    play: function() {
-        this.player.api("play");
-    }
-};
+
 /*!
   LESS - Leaner CSS v1.3.3
   http://lesscss.org

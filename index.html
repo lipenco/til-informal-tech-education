@@ -24,11 +24,16 @@
 
 
 
-  <title>What I've lernt today</title>
+  <title>TIL: Informal Tech Education</title>
+ 
+ <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script> 
+ <script type="text/javascript" src="js/tools.js"></script>  
+ <script type="text/javascript" src="js/modalEffects.js"></script> 
+  <link href="css/component.css" rel="stylesheet" type="text/css" /> 
+ <link href="css/default.css" rel="stylesheet" type="text/css" /> 
+ <link href="css/style.css" rel="stylesheet" type="text/css" /> 
 
-  <!-- --> <script type="text/javascript" src="js/tools.js"></script> <!-- -->
 
-  <!-- --> <link href="css/style.css" rel="stylesheet" type="text/css" /> <!-- -->
 
  
 
@@ -36,12 +41,15 @@
 
 </head>
   <body>
+
+     
+    
     <div class="content-wrapper inactive">
 
     <div class="page page-intro" data-bg="000000">
       <div class="content">
-        <div class="logo">Logo</div>
-        <div class="message">snapshot of tech informal education on golabal landsace.</div>
+        <div class="logo"></div>
+        <div class="message">research of tech informal education on golabal landsace.</div>
         <div class="social">
           <div class="facebook">
              <img src="img/soundcloud-ss.png">
@@ -59,7 +67,7 @@
         </div>
         <div class="message">
           <div class="caption">You redisign.</div>
-          <div class="text">Everywere in the world people are creating communities, cooworking spaces and informal organizactions to develop their tech skills. Are you one of them? I want to know your way.</div>
+          <div class="text">All over the world, learners and mentors are meeting face-to-face to develop their technical skills. These "informal learning groups" like Hackidemia, openTechSchool and CoderDojo are moving swiftly to reinvent tech education by focusing on personal experiences, projects and peers.</div>
         </div>
       </div>
     </div>
@@ -68,12 +76,18 @@
       <div class="content">
         
         <div class="message">
-          <div class="caption">I discover.</div>
-          <div class="text">I am reaserching the innovative methods of tech education. I am passionate about experimental learning. I just graduate form Harvard Master Program in eduaction and work at P2PU.org.</div>
+          <div class="caption">i discover.</div>
+          <div class="text">The goals of this project are to take a snapshot of the informal tech education landscape, and help "Maker" communities learn from one another. <br/> <br/>
+            We'll look at how each group approaches cultural cohesion, learning design, and governance. <br/><br/>
+            An open project from soup-to-nuts, all of the interviews are posted to SoundCloud, and the protocol itself will live on GitHub.</div>
+      
+      <div class="vidget">
+       <iframe id="soundclaud" width="110%" height="420" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F5343775"> 
+        </iframe> 
+      </div>
+
           
-          <a class="demo-link" href="https://soundcloud.com/vanessa-gennarelli" target="_blank"> 
-             <img src="img/soundcloud-ss.png"> 
-             </a>
+         
          
         </div>
       </div>
@@ -121,29 +135,39 @@
     </div>
   </div>
 
-  <div class="readymag">logo</div>
+  <div class="logo"></div>
   <div class="menu">
     <ul>
       <li data-page="create">Redesign</li>
       <li data-page="discover">Discover</li>
       <li data-page="more">More</li>
       <li data-page="beta">Subscribe</li>
-      <li data-page="beta">Me</li>
+      <li class="md-trigger" data-modal="modal-10">Me</li>
     </ul>
 
     <span></span>
   </div>
 
+  <div class="md-modal md-effect-10" id="modal-10">
+      <div class="md-content">
+        <h3>  <img src="img/Vanessa.png"> About Vanessa</h3>
+        <div>
 
-  <div class="crumpled-box">
-   <div class="line-wrapper even"><div class="line"> <div class="logo">logo</div><div class="gradient"></div></div></div>
-    
-   
-    <div class="line-wrapper odd"><div class="line"><div class="gradient"></div></div></div>
+          <p>Vanessa Gennarelli is a qualitative researcher, learning designer and maker of things. She’s the Learning Lead for <a href="https://p2pu.org">Peer 2 Peer University</a>, a grassroots group leading experiments in how we learn online.</p> <p> She’s worked on innovative projects such as the <a href="http://mechanicalmooc.org/"> Mechanical MOOC</a> and <a href="http://badges.p2pu.org"> Badges for Lifelong Learning </a>.</p> <p> She holds a Master’s of Education from Harvard University and is a former Research Intern with the Lifelong Kindergarten Group at the MIT Media Lab. You can find out more about her work at mozzadrella.me</p>
+         
+          <button class="md-close">Close me!</button>
+        </div>
+      </div>
+    </div>
+
+
+<div class="crumpled-box">
+   <div class="line-wrapper even"><div class="line"><div class="gradient"></div></div></div> 
+    <div class="line-wrapper odd"><div class="line"><span class="til">TIL: Informal Tech Education</span><div class="gradient"></div></div></div>
     <div class="line-wrapper even"><div class="line"><div class="gradient"></div></div></div>
-    <div class="line-wrapper odd"><div class="line">Let's change<div class="gradient"></div></div></div>
-    <div class="line-wrapper even"><div class="line">tech eduaction<div class="gradient"></div></div></div>
-    <div class="line-wrapper odd"><div class="line">forever.<div class="gradient"></div></div></div>
+    <div class="line-wrapper odd"><div class="line">Connecting <div class="gradient"></div></div></div>
+    <div class="line-wrapper even"><div class="line">Learning Communities<div class="gradient"></div></div></div>
+    <div class="line-wrapper odd"><div class="line">Through Research<div class="gradient"></div></div></div>
     <div class="line-wrapper even"><div class="line"><div class="gradient"></div></div></div>
     <div class="line-wrapper odd"><div class="line"><div class="gradient"></div></div></div>
     <div class="line-wrapper even">
@@ -161,8 +185,6 @@
 
 
   <script type="text/javascript">
-
-
     //reset window scroll position on page reload
     $(function() {
       $(window).scrollTop(0);
@@ -172,8 +194,18 @@
         $('.content-wrapper').scrollTop(0);
       };
     })
-
     homepageInitialize();
   </script>
+
+  <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+    <script>
+      // this is important for IEs
+      var polyfilter_scriptpath = '/js/';
+    </script>
+ 
+
+
 </body>
 </html>
