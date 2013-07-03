@@ -148,7 +148,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 .content-wrapper .page.page-intro .content .social .twitter{position:absolute;right:0;top:0;}
 .content-wrapper .page.page-create{min-height:790px;}
 .content-wrapper .page.page-create .content{position:absolute;width:1504px;height:635px;left:50%;top:50%;margin-top:-240px;margin-left:-752px;}
-.content-wrapper .page.page-create .content .photo{position:absolute;top:0;left:0;width:1262px;height:635px;background-image:url('../img/homepage/mac-shadow.png');background-size:1262px 635px;background-repeat:no-repeat;}
+.content .photo img { float: left; margin-top: 70px; margin-left: 300px;}
 
 .content-wrapper .page.page-create .content .message{position:absolute;left:50%;margin-left:50px;top:85px;width:432px;height:180px;}
 .content-wrapper .page.page-create .content .message .caption{font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:bold;font-style:normal;font-size:78px;color:#fff;}
@@ -224,7 +224,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
   font-family:"flex-thin",
   'Trebuchet MS',Arial,sans-serif;font-weight:normal;
   font-style:normal;
-  background: url('../img/bg22.png') repeat center top;
+  background: url('../img/blank.png') repeat center top;
 
 
 }
