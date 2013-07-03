@@ -141,27 +141,35 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
   height:20px;
   margin:42px auto 0;
 }
-.content-wrapper .page.page-intro .content .social .facebook{
-  position:absolute;
-  left:0;
-  top:0;}
-.content-wrapper .page.page-intro .content .social .twitter{position:absolute;right:0;top:0;}
+
 .content-wrapper .page.page-create{min-height:790px;}
 .content-wrapper .page.page-create .content{position:absolute;width:1504px;height:635px;left:50%;top:50%;margin-top:-240px;margin-left:-752px;}
-.content .photo img { float: left; margin-top: 70px; margin-left: 300px;}
+.content .photo img { float: left; margin-top: 25px; margin-left: 300px;}
 
-.content-wrapper .page.page-create .content .message{position:absolute;left:50%;margin-left:50px;top:85px;width:432px;height:180px;}
-.content-wrapper .page.page-create .content .message .caption{font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:bold;font-style:normal;font-size:78px;color:#fff;}
+.content-wrapper .page.page-create .content .message{
+  position:absolute;left:44%;margin-left:50px;top:85px;width:500px;height:180px;}
+.content-wrapper .page.page-create .content .message .caption, 
+.page-interview .content .message .caption{
+  font-family:"flex-thin",'Trebuchet MS',Arial;
+  font-size:60px;color:#fff;}
+
+
 .content-wrapper .page.page-create .content .message .text{margin-top:17px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;font-size:20px;color:rgba(255, 255, 255, 0.8);line-height:26px;}
 .content-wrapper .page.page-discover .content{position:absolute;width:1042px;height:640px;left:50%;top:50%;margin-top:-320px;margin-left:-521px;}
 .content-wrapper .page.page-discover .content .message{
-  position:absolute;top:20px;left:72px;width:400px;}
+  position:absolute;top:20px;left:72px;width:450px;}
 .content-wrapper .page.page-discover .content .message .caption{
-  font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:bold;font-style:normal;font-size:78px;color:#1d1a1b;}
-.content-wrapper .page.page-discover .content .message .text{margin-top:48px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;font-size:20px;color:rgba(29, 26, 27, 0.7);line-height:26px;width:100%;}
+  font-family:"flex-thin",Arial,sans-serif;
+  font-size:60px;
+  color:#1d1a1b;}
+.content-wrapper .page.page-discover .content .message .text{margin-top:48px;
+  font-family:"flex",'Trebuchet MS',Arial;
+  font-weight:400;
+  font-size:20px;
+  color:rgba(29, 26, 27, 0.7);line-height:26px;width:100%;}
 .content-wrapper .page.page-discover .content .message .demo-link{display:block;margin-top:51px;text-decoration:none;}
 .content-wrapper .page.page-discover .content .message .demo-link .link{font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;font-size:16px;color:rgba(54, 50, 52, 0.7);line-height:20px;border-bottom:1px solid rgba(54, 50, 52, 0.7);}
-.page.page-discover .content .vidget {position:absolute;top:20px; left: 140%;width:300px;}
+.page.page-discover .content .vidget {position:absolute; top: -10px; left: 120%;width:300px;}
 
 
 
@@ -184,8 +192,6 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 .no-touch .content-wrapper .page.page-beta .content .email .input:hover::-webkit-input-placeholder{color:rgba(46, 46, 42, 0.6);}
 .no-touch .content-wrapper .page.page-beta .content .email .input:hover:-moz-placeholder{color:rgba(46, 46, 42, 0.6);}
 .content-wrapper .page.page-beta .content .email .submit{position:absolute;right:0;top:0;width:49px;border-radius:0 2px 2px 0;height:48px;background:#fff;background-image:url('../img/homepage/go.png');background-repeat:no-repeat;background-size:50px 48px;}
-.content-wrapper .page.page-beta .content .email.valid .submit{background-image:url('../img/homepage/go-active.png');cursor:pointer;}
-.no-touch .content-wrapper .page.page-beta .content .email.valid .submit:hover{background-image:url('../img/homepage/go-hover.png');}
 .content-wrapper .page.page-beta .content .email .after{position:absolute;left:0;top:0;width:100%;height:100%;display:none;border-radius:2px;line-height:48px;font-size:21px;background:#fff;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;color:#1d1a1b;text-align:center;}
 .content-wrapper .page.page-beta .content .email.submitted .input{display:none;}
 .content-wrapper .page.page-beta .content .email.submitted .submit{display:none;}
@@ -324,16 +330,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
                 .content-wrapper .page.page-more{background:#36b2e2;} 
                 .content-wrapper .page.page-beta{background:#a4f2d4;}}
 
-@media only screen and (-webkit-min-device-pixel-ratio:2){
-             
-                 
-                 
-          
-                  .content-wrapper .page.page-beta .content .email .submit{background-image:url('../img/homepage/retina-go.png');} 
-                  .content-wrapper .page.page-beta .content .email.valid .submit{background-image:url('../img/homepage/retina-go-active.png');} 
-                  .no-touch .content-wrapper .page.page-beta .content .email.valid .submit:hover{background-image:url('../img/homepage/retina-go-hover.png');} 
-                  .content-wrapper .page.page-beta .content .flag{background-image:url('../img/homepage/retina-flag.png');} 
-              
+
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px){
     .content-wrapper .page.page-intro .content .logo{background-image:url('../img/til.jpg');} 
                   .content-wrapper .page.page-create .content .photo{background-image:url('../img/homepage/iphone/retina-mac-body.png');} 
