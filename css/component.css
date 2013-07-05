@@ -26,13 +26,12 @@ perspective effects (not including the modals and the overlay).
 
 .md-modal {
 	position: fixed;
-	top: 50%;
+	top: 43%;
 	left: 50%;
 	width: 90%;
 	max-width: 960px;
 	min-width: 320px;
 	height: auto;
-	opacity: 0.9;
 	z-index: 2000;
 	visibility: hidden;
 	-webkit-backface-visibility: hidden;
@@ -42,7 +41,7 @@ perspective effects (not including the modals and the overlay).
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	font-family:"Apercu Pro Regular";
+	font-family:"Flex-thin";
 }
 
 .md-show {
@@ -72,11 +71,12 @@ perspective effects (not including the modals and the overlay).
 /* Content styles */
 .md-content {
 	color: black;
-	background:  white;
+	background: url("/img/blank222.png");
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
-	font-family:"flex";
+	font-family:"flex-thin";
+	opacity: 0.9;
 }
 
 .md-content h3 {
@@ -85,7 +85,7 @@ perspective effects (not including the modals and the overlay).
 	text-align: center;
 	font-size: 2.4em;
 	font-weight: 300;
-	opacity: 0.8;
+	opacity: 1;
 	background: rgba(0,0,0,0.1);
 	border-radius: 3px 3px 0 0;
 }
