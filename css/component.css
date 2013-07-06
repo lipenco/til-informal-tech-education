@@ -71,30 +71,42 @@ perspective effects (not including the modals and the overlay).
 /* Content styles */
 .md-content {
 	color: black;
-	background: url("/img/blank222.png");
+	background: #ebebeb;
 	position: relative;
 	border-radius: 3px;
 	margin: 0 auto;
 	font-family:"flex-thin";
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .md-content h3 {
 	margin: 0;
-	padding: 0.4em;
+	padding: 0.8em 0 0.6em 0;
 	text-align: center;
-	font-size: 2.4em;
-	font-weight: 300;
+	font-size: 2.5em;
+	font-weight: 600;
 	opacity: 1;
 	background: rgba(0,0,0,0.1);
 	border-radius: 3px 3px 0 0;
+
+}
+.md-content img {
+	margin-top: 1.5em;
+	-webkit-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+-moz-box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+box-shadow: 0 2px 0 rgba(255,255,255,.2), inset 0 5px 6px rgba(0,0,0,.6), inset 0 2px 0 rgba(0,0,0,.6);
+   -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    opacity: 1;
 }
 
 .md-content > div {
 	padding: 15px 40px 30px;
 	margin: 0;
-	font-weight: 300;
-	font-size: 1.15em;
+	font-weight: 400;
+	font-size: 1.5em;
+	opacity: 1;
 }
 
 .md-content > div p {
@@ -112,9 +124,12 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content button {
+	position: absolute;
 	display: block;
-	margin: 0 auto;
-	font-size: 0.8em;
+	font-size: 1em;
+	padding: 1.5em 0.8em 1.5em 0.8em;
+	left: 90%;
+	top:93%;
 }
 
 /* Individual modal styles with animations/transitions */
@@ -151,8 +166,48 @@ perspective effects (not including the modals and the overlay).
 	-moz-transform: rotateX(0deg);
 	-ms-transform: rotateX(0deg);
 	transform: rotateX(0deg);
-	opacity: 1;
+	opacity: 0.9;
 }
+
+/* Effect 13: 3D slit */
+.md-effect-13.md-modal {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.md-effect-13 .md-content {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-3000px) rotateY(90deg);
+	-moz-transform: translateZ(-3000px) rotateY(90deg);
+	-ms-transform: translateZ(-3000px) rotateY(90deg);
+	transform: translateZ(-3000px) rotateY(90deg);
+	opacity: 0;
+}
+
+.md-show.md-effect-13 .md-content {
+	-webkit-animation: slit .7s forwards ease-out;
+	-moz-animation: slit .7s forwards ease-out;
+	animation: slit .7s forwards ease-out;
+}
+
+@-webkit-keyframes slit {
+	50% { -webkit-transform: translateZ(-250px) rotateY(89deg); opacity: .5; -webkit-animation-timing-function: ease-out;}
+	100% { -webkit-transform: translateZ(0) rotateY(0deg); opacity: 1; }
+}
+
+@-moz-keyframes slit {
+	50% { -moz-transform: translateZ(-250px) rotateY(89deg); opacity: .5; -moz-animation-timing-function: ease-out;}
+	100% { -moz-transform: translateZ(0) rotateY(0deg); opacity: 1; }
+}
+
+@keyframes slit {
+	50% { transform: translateZ(-250px) rotateY(89deg); opacity: 1; animation-timing-function: ease-in;}
+	100% { transform: translateZ(0) rotateY(0deg); opacity: 1; }
+}
+
 
 /* Effect 11: Super scaled */
 
