@@ -1,0 +1,10 @@
+form input {
+text-align: left;
+border-bottom: 3px solid #222;
+font-weight: 700;
+-webkit-transition: all 0.1s linear;
+-moz-transition: all 0.1s linear;
+-o-transition: all 0.1s linear;
+transition: all 0.1s linear;
+width: 500px;
+}
