@@ -371,12 +371,18 @@ font-family: "flex";
   border: none;
   border-bottom: 3px solid #000;
   width: 100%;
+  font-family: "flex-thin";
+  font-size: 1.5em;
+
 }
 
 #contact textarea {
   background-color: transparent;
   border: 3px solid #000;
    width: 100%;
+   font-family: "flex-thin";
+  font-size: 1.5em;
+
 }
 
 #contact form .title {
