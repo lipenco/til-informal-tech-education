@@ -357,8 +357,9 @@ line-height:26px;}
 
 
 
-#contact h1  {
-margin: 5% 26% ;
+#contact h1, #about-me h1 {
+text-align: center;
+padding: 5%;
 font-family: "flex";
 text-shadow: 0px 1px 1px rgba(0, 0, 0, .6);
 }
