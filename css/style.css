@@ -57,13 +57,6 @@ a {
 }
 
 
-
-.no-touch .login:hover{
-  text-decoration:none;
-  box-shadow:0 0 0 1px rgba(255, 255, 255, 0.82);
-}
-
-
 .menu{
   display:none;position:fixed;
   width:314px;
@@ -137,10 +130,10 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 }
 
 .content-wrapper .page.page-learning, .content-wrapper .page.page-interview{
-  min-height:790px;}
+  min-height:700px;}
 .content-wrapper .page.page-learning .content, .content-wrapper .page.page-interview .content{
-  position:absolute;width:1504px;height:635px;left:50%;top:50%;margin-top:-240px;margin-left:-752px;}
-.content .photo img { float: left; margin-top: 25px; margin-left: 300px;}
+  position:absolute;width:1504px;height:635px;left:50%;top:30%;margin-top:-240px;margin-left:-752px;}
+.content .photo img { float: left; margin-top: 60px; margin-left: 300px;}
 
 .content-wrapper .page.page-learning .content .message, .content-wrapper .page.page-interview .content .message{
   position:absolute;left:44%;margin-left:50px;top:85px;width:500px;height:180px;}
@@ -174,10 +167,11 @@ line-height:26px;}
   color:rgba(29, 26, 27, 0.7);line-height:26px;width:100%;}
 .content-wrapper .page.page-research .content .message .demo-link{display:block;margin-top:51px;text-decoration:none;}
 .content-wrapper .page.page-research .content .message .demo-link .link{font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;font-size:16px;color:rgba(54, 50, 52, 0.7);line-height:20px;border-bottom:1px solid rgba(54, 50, 52, 0.7);}
-.page.page-research .content .vidget {position:absolute; top: -10px; left: 120%;width:300px;}
-
-
-
+.page.page-research .content .vidget {
+  position:absolute; 
+  top: -10px; 
+  left: 110%;
+  width:260px;}
 .content-wrapper .page.page-more .content{
   position:absolute;
   width:885px;
@@ -190,7 +184,11 @@ line-height:26px;}
 .content-wrapper .page.page-more .item .icon{position:relative;margin:0 auto;}
 .content-wrapper .page.page-more .item .caption{text-align:center;color:#1d1a1b;font-size:32px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:bold;font-style:normal;}
 .content-wrapper .page.page-more .item .text{margin-top:19px;text-align:center;color:rgba(29, 26, 27, 0.8);font-size:16px;line-height:22px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
-.content-wrapper .page.page-subscribe .copyright{position:absolute;width:200px;left:48px;bottom:28px;color:rgba(29, 26, 27, 0.7);font-size:12px;line-height:16px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
+.content-wrapper .page.page-subscribe .copyright{
+  position:absolute;width:260px;left:48px;
+  bottom:28px;color:rgba(29, 26, 27, 0.7);
+  font-size:12px;line-height:16px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;
+  font-weight:normal;font-style:normal;}
 .content-wrapper .page.page-subscribe .hello{display:block;position:absolute;right:48px;bottom:43px;color:rgba(29, 26, 27, 0.7);font-size:16px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;text-decoration:none;border-bottom:1px solid rgba(29, 26, 27, 0.7);}
 .no-touch .content-wrapper .page.page-beta .hello:hover{text-decoration:none;border-bottom:1px solid transparent;}
 .content-wrapper .page.page-subscribe .content{position:absolute;width:624px;height:450px;left:50%;top:50%;margin-top:-225px;margin-left:-312px;}
@@ -390,7 +388,7 @@ form .title, .title {
   padding: 5% 0 2% 0%;
 }
 
-#ss-submit {
+.button, #ss-submit {
 background: linear-gradient(bottom,#e23939 0%,#c41d1d 100%);
 border: 3px solid #000;
 box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .5);
@@ -400,7 +398,16 @@ border-radius: 8px;
 font-family: "flex-thin";
   font-size: 1.5em;
 }
-
+.button {
+  width:40%;
+  padding: 3%;
+  margin: 5% 0;
+}
 .message, .name {
   margin-left: 7%;
+}
+
+.about-text {
+  font-size: 1.5em;
+  padding-top: 5%;
 }
