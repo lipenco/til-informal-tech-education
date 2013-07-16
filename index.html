@@ -4,43 +4,27 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <!--sets iphone viewport to screen-width on portrait, and screen-height on landscape
-    thus page is always rendered at current screen size: 320, 480, 568-->
   <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="#">
-
   <meta property="og:title" content="What I lernt today">
   <meta property="og:site_name" content="What I lernt today">
   <meta property="og:description" content="What I lernt today">
-
   <link rel="icon" href="#" type="image/x-icon"/>
   <link rel="shortcut icon" href="#" type="image/x-icon"/>
-
-
 
   <title>TIL: Informal Tech Education</title> 
  <script type="text/javascript" src="js/tools.js"></script> 
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" /> 
  <link href="css/style.css" rel="stylesheet" type="text/css" /> 
 
-
-
-
-  <!-- -->   <!-- -->
-
 </head>
   <body>
 
-     
-    
     <div class="content-wrapper inactive">
-
-    <div class="page page-intro" data-bg="000000">
-      <div class="content">
-        <div class="logo"></div>
-        <div class="message">All over the world, learners and mentors are meeting face-to-face to develop their technical skills.</div>
-      </div>
+        <div class="page page-intro" data-bg="000000">
+          <div class="content">
+            <div class="logo"></div>
+            <div class="message">All over the world, learners and mentors are meeting face-to-face to develop their technical skills.</div>
+          </div>
     </div>
 
     <div class="page page-learning" data-bg="003399">
@@ -64,14 +48,34 @@
             We'll look at how each group approaches cultural cohesion, learning design, and governance. <br/><br/>
             An open project from soup-to-nuts, all of the interviews are posted to SoundCloud, and the protocol itself will live on GitHub.</div>
       
-      <div class="vidget">
-       <iframe id="soundclaud" width="120%" height="380" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F5343775"> 
-        </iframe> 
-      </div>
-         
+     <div id="vidget">
+           <!--   <iframe id="soundclaud" width="120%" height="380" scrolling="yes" frameborder="yes" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F5343775"> 
+              </iframe>  -->
+            </div> 
         </div>
       </div>
     </div>
+
+    <script>
+//doesn't block the load event
+function createIframe(){
+  var i = document.createElement("iframe");
+  i.src = "https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F5343775";
+  i.scrolling = "yes";
+  i.frameborder = "yes";
+  i.width = "120%";
+  i.height = "380px";
+  document.getElementById("vidget").appendChild(i);
+};
+ 
+// Check for browser support of event handling capability
+if (window.addEventListener)
+window.addEventListener("load", createIframe, false);
+else if (window.attachEvent)
+window.attachEvent("onload", createIframe);
+else window.onload = createIframe;
+
+</script>
 
     <div class="page page-interview" data-bg="ccffff">
       <div class="content">
