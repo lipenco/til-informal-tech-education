@@ -212,6 +212,10 @@ line-height:26px;}
 .content-wrapper .page.page-subscribe .content .caption{
   font-family:"flex-thin",Arial,sans-serif;font-weight:bold;font-style:normal;text-align:center;font-size:88px;color:#1d1a1b;}
 .content-wrapper .page.page-subscribe .content .text1{color:rgba(29, 26, 27, 0.7);margin-top:20px;text-align:center;font-size:21px;line-height:28px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
+.content-wrapper .page.page-subscribe .content .text2{margin-top:25px;padding:0 82px;color:rgba(29, 26, 27, 0.7);text-align:center;font-size:15px;line-height:20px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
+.no-touch .content-wrapper .page.page-beta .content .text2 a:hover{text-decoration:none;border-bottom:1px solid transparent;}
+.content-wrapper .page.page-subscribe .content .social{position:relative; text-align: center; margin-top: 28px;}
+
 
 .crumpled-box {
   position:fixed;
