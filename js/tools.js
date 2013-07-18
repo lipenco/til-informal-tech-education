@@ -126,14 +126,7 @@ function contentInitialize() {
         }
         m || (l && l.isReady && l.notPlayedYet && e($("")) && l.play(), f && f.isReady && f.notPlayedYet && e($(".ipad-video")) && f.play());
     }
-    function r(e) {
-        var t = $(e.currentTarget).attr("data-page"), n = $(".page.page-" + t);
-        m ? $("html,body").animate({
-            scrollTop: n.position().top
-        }, 400) : g.animate({
-            scrollTop: n.position().top + g.scrollTop()
-        }, 400);
-    }
+  
     function a() {
         h.find(".page").css("height", d.height()), u(), n();
     }
@@ -165,14 +158,7 @@ function contentInitialize() {
         e.getElementById(n) || (r = e.createElement(t), r.id = n, r.src = "//connect.facebook.net/en_US/all.js#xfbml=1", 
         i.parentNode.insertBefore(r, i));
     }(document, "script", "facebook-jssdk"), e(), $(".menu ul li").click(r);
-    var y = $(".page.page-beta .email"), v = y.find(".input"), b = y.find(".submit");
-    v.bind("input propertychange", i).bind("keypress keyup keydown", function(e) {
-        e.stopPropagation();
-    }).bind("keyup", function(e) {
-        e.stopPropagation(), 13 == e.keyCode && o();
-    }).blur(), b.bind("click", o), d.on("touchstart", function(e) {
-        v.is(":focus") && (v.blur(), e.stopPropagation());
-    }), a();
+    
 }
 
 (function(e, t) {
