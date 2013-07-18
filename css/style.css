@@ -12,7 +12,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
 }
 body{
  line-height:1;
- font-family: "flex";
+ font-family: "flex-thin";
 }
 ol,ul {
   list-style:none;
@@ -177,10 +177,10 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
 
 .content-wrapper .page.page-learning .content .message .text, 
 .content-wrapper .page.page-interview .content .message .text{
-margin-top:17px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;
+margin-top:17px;font-family:"flex-thin",'Trebuchet MS',Arial,sans-serif;
 font-weight:normal;font-style:normal;
-font-size:20px;color:rgba(255, 255, 255, 0.8);
-line-height:26px;}
+font-size:25px;color:rgba(255, 255, 255, 0.8);
+line-height:30px;}
 .content-wrapper .page.page-interview .content .message .text {  
  color:#1d1a1b; width: 100%;}
 .content-wrapper .page.page-research .content{
@@ -197,25 +197,35 @@ line-height:26px;}
   font-size:60px;
   color:#1d1a1b;}
 .content-wrapper .page.page-research .content .message .text{margin-top:48px;
-  font-family:"flex",'Trebuchet MS',Arial;
+  font-family:"flex-thin",'Trebuchet MS',Arial;
   font-weight:400;
-  font-size:20px;
-  color:rgba(29, 26, 27, 0.7);line-height:26px;width:100%;}
+  font-size:25px;
+ line-height:27px;
+  color:rgba(29, 26, 27, 0.7); width:110%;}
 
 .page.page-research .content .vidget {
   position:absolute; 
-  top: -10px; 
+  top: 60px; 
   left: 120%;
-  width:260px;
+  width:250px;
+}
+
+.text a {
+  font-weight: bold;
+  color: #000;
+}
+
+.text a:hover {
+  opacity: 0.6;
 }
 
 .content-wrapper .page.page-subscribe .copyright{
   position:absolute;width:260px;left:48px;
   bottom:28px;
   color:rgba(29, 26, 27, 0.7);
-  font-size:12px;line-height:16px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;
+  font-size:12px;line-height:16px;font-family:"flex-thin",'Trebuchet MS',Arial,sans-serif;
   font-weight:normal;font-style:normal;}
-.content-wrapper .page.page-subscribe .hello{display:block;position:absolute;right:48px;bottom:43px;color:rgba(29, 26, 27, 0.7);font-size:16px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;text-decoration:none;border-bottom:1px solid rgba(29, 26, 27, 0.7);}
+.content-wrapper .page.page-subscribe .hello{display:block;position:absolute;right:48px;bottom:43px;color:rgba(29, 26, 27, 0.7);font-size:16px;font-family:"flex-thin",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;text-decoration:none;border-bottom:1px solid rgba(29, 26, 27, 0.7);}
 .no-touch .content-wrapper .page.page-subscribe .hello:hover{text-decoration:none;border-bottom:1px solid transparent;}
 .content-wrapper .page.page-subscribe {
   height: 500px;
@@ -233,8 +243,6 @@ line-height:26px;}
   font-family:"flex-thin",Arial,sans-serif;font-weight:bold;font-style:normal;text-align:center;font-size:88px;color:#1d1a1b;}
 .content-wrapper .page.page-subscribe .content .text1{color:rgba(29, 26, 27, 0.7);margin-top:20px;text-align:center;font-size:21px;line-height:28px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
 .content-wrapper .page.page-subscribe .content .text2{margin-top:25px;padding:0 82px;color:rgba(29, 26, 27, 0.7);text-align:center;font-size:15px;line-height:20px;font-family:"flex",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;}
-.no-touch .content-wrapper .page.page-beta .content .text2 a:hover{text-decoration:none;border-bottom:1px solid transparent;}
-.content-wrapper .page.page-subscribe .content .social{position:relative; text-align: center; margin-top: 28px;}
 
 
 .crumpled-box {
@@ -335,9 +343,9 @@ line-height:26px;}
                 .content-wrapper .page.page-learning{background:#00b68c;}
                 .content-wrapper .page.page-learning .content .message .caption{color:#1d1a1b;} 
                 .content-wrapper .page.page-learning .content .message .text{color:rgba(29, 26, 27, 0.7);} 
-                .content-wrapper .page.page-discover{background:#cdcfd4;} 
-                .content-wrapper .page.page-more{background:#36b2e2;} 
-                .content-wrapper .page.page-beta{background:#a4f2d4;}}
+                .content-wrapper .page.page-research{background:#cdcfd4;} 
+                .content-wrapper .page.page-interview{background:#36b2e2;} 
+                .content-wrapper .page.page-subscribe{background:#a4f2d4;}}
 
 
 @media only screen and (-webkit-min-device-pixel-ratio:2) and (max-device-width:767px){
