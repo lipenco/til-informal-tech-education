@@ -134,7 +134,7 @@ font-weight:normal;font-style:normal;font-size:16px;color:#8c8a8b;cursor:pointer
   width:1504px;
   height:600px;
   left:50%;
-  top:30%;
+  top:25%;
   margin-top:-230px;
   margin-left:-752px;}
 .content .photo img { 
@@ -196,16 +196,17 @@ line-height:30px;}
   font-family:"flex-thin",Arial,sans-serif;
   font-size:60px;
   color:#1d1a1b;}
-.content-wrapper .page.page-research .content .message .text{margin-top:48px;
+.content-wrapper .page.page-research .content .message .text{
+  margin-top:45px;
   font-family:"flex-thin",'Trebuchet MS',Arial;
   font-weight:400;
-  font-size:25px;
- line-height:27px;
-  color:rgba(29, 26, 27, 0.7); width:110%;}
+  font-size:23px;
+ line-height:25px;
+  color:rgba(29, 26, 27, 0.9); width:110%;}
 
 .page.page-research .content .vidget {
   position:absolute; 
-  top: 60px; 
+  top: 40px; 
   left: 120%;
   width:250px;
 }
@@ -213,10 +214,16 @@ line-height:30px;}
 .text a {
   font-weight: bold;
   color: #000;
+  transition: all 0.2s ease-in-out 0s;
+
 }
 
 .text a:hover {
   opacity: 0.6;
+    -webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+
 }
 
 .content-wrapper .page.page-subscribe .copyright{
@@ -225,8 +232,20 @@ line-height:30px;}
   color:rgba(29, 26, 27, 0.7);
   font-size:12px;line-height:16px;font-family:"flex-thin",'Trebuchet MS',Arial,sans-serif;
   font-weight:normal;font-style:normal;}
-.content-wrapper .page.page-subscribe .hello{display:block;position:absolute;right:48px;bottom:43px;color:rgba(29, 26, 27, 0.7);font-size:16px;font-family:"flex-thin",'Trebuchet MS',Arial,sans-serif;font-weight:normal;font-style:normal;text-decoration:none;border-bottom:1px solid rgba(29, 26, 27, 0.7);}
-.no-touch .content-wrapper .page.page-subscribe .hello:hover{text-decoration:none;border-bottom:1px solid transparent;}
+.content-wrapper .page.page-subscribe .copyright a{
+  color: #000;
+}
+.content-wrapper .page.page-subscribe .hello { 
+  text-decoration:none; display:block;
+  position:absolute;right:48px;
+  bottom:33px;
+  color:rgba(29, 26, 27, 0.7);
+  font-size:14px;
+  font-family:"flex-thin",Arial,sans-serif;font-weight:normal;
+  font-style:normal;text-decoration:none;
+ }
+.no-touch .content-wrapper .page.page-subscribe .hello:hover{
+opacity: 0.8;}
 .content-wrapper .page.page-subscribe {
   height: 500px;
   margin-top: -200px;
@@ -360,12 +379,27 @@ line-height:30px;}
 .contact-page {
   width: 100%;
   height:100%;
-  background: url('/img/blank222.png');
+  color: #000;
   font-family: "flex-thin";
    box-shadow: 
     -moz-box-shadow:    inset 0 0px 300px #888888;
     -webkit-box-shadow: inset 0 0px 300px #888888;
     box-shadow:         inset 0 0px 300px #888888;
+
+background-image: linear-gradient(bottom, rgb(222,204,224) 2%, rgb(52,143,217) 100%, rgb(255,255,255) 0%);
+background-image: -o-linear-gradient(bottom, rgb(222,204,224) 2%, rgb(52,143,217) 100%, rgb(255,255,255) 0%);
+background-image: -moz-linear-gradient(bottom, rgb(222,204,224) 2%, rgb(52,143,217) 100%, rgb(255,255,255) 0%);
+background-image: -webkit-linear-gradient(bottom, rgb(222,204,224) 2%, rgb(52,143,217) 100%, rgb(255,255,255) 0%);
+background-image: -ms-linear-gradient(bottom, rgb(222,204,224) 2%, rgb(52,143,217) 100%, rgb(255,255,255) 0%);
+
+background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0.02, rgb(222,204,224)),
+  color-stop(1, rgb(52,143,217)),
+  color-stop(0, rgb(255,255,255))
+);
 }
 
 
@@ -536,34 +570,32 @@ text-transform: lowercase;
 
 .arrow-interview {
   position: absolute;
-  right: 46%;
-  top:79%;
+  right: 57%;
+  top:122%;
   border: none;
   transition: all 0.2s ease-in-out 0s;
 }
 
 .arrow-interview:hover {
-  right: 45%;
+  right: 56%;
   opacity: 0.5;
   -webkit-transition: all .2s ease-in-out;
--moz-transition: all .2s ease-in-out;
--o-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
 }
 
 .arrow-research {
   position: absolute;
-  right: 3%;
-  top:90%;
+  right: 68%;
+  top:92%;
   border: none;
   transition: all 0.2s ease-in-out 0s;
 }
 
 .arrow-research:hover {
-  right: 2%;
+  right: 67%;
   opacity: 0.5;
   -webkit-transition: all .2s ease-in-out;
 -moz-transition: all .2s ease-in-out;
 -o-transition: all .2s ease-in-out;
 }
-
-
