@@ -297,8 +297,11 @@ opacity: 0.8;}
   'Trebuchet MS',Arial,sans-serif;font-weight:normal;
   font-style:normal;
   background: url('../img/blank222.png') repeat center top;
+  font-weight: 600;
 
-
+}
+.line .til {
+   font-weight: normal;
 }
 .crumpled-box .line-wrapper .gradient{
   position:absolute;
