@@ -113,8 +113,6 @@ function contentInitialize() {
             seek: t
         });
     }
-   
-  
   
     function a() {
         h.find(".page").css("height", d.height()), u(), n();
